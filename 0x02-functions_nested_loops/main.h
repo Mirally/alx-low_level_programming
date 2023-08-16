@@ -1,6 +1,7 @@
 /**
- * main - print _putchar
+ * main - nested loop and functions
  *
  * Return (0)
  */
 int _putchar(char c);
+void print_alphabet(void);
