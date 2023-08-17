@@ -1,9 +1,7 @@
 #include "main.h"
 /**
- * _isalpha - check for alphabets
- *
+ * _isalpha - return 1 when c is cap or low
  * @c: check characters
- *
  * Return: 1 if c is low or cap otherwise 0
  *
  */
@@ -16,7 +14,7 @@ int _isalpha(int c)
 	{
 		for (upper = 'A'; upper <= 'Z'; upper++)
 		{
-			if (lower == 'c' || upper == 'C')
+			if (lower == c || upper == c)
 			{
 				letter = 1;
 			}
