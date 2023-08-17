@@ -1,9 +1,12 @@
 #include "main.h"
 /**
  * _isalpha - return 1 when c is cap or low
- * @c: check characters
- * Return: 1 if c is low or cap otherwise 0
  *
+ * Description: we are usin _putchar
+ *
+ * @c: check characters
+ *
+ * Return: 1 if c is low or cap otherwise 0
  */
 int _isalpha(int c)
 {
