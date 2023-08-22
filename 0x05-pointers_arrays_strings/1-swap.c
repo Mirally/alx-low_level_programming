@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * swap_int - check the code for Holberton School students.
+ * swap_int - swaps two integers
  * @a: first int
  * @b: second int
  * Return: Always 0.
