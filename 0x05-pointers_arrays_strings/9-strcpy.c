@@ -2,25 +2,25 @@
 #include <stdio.h>
 
 /**
- * print_array - prints n elements of an array of integers
- * @a: array
- * @n: number of index
+ * _strcpy -  copies the string pointed to
+ * @dest: destination string
+ * @src: source string
  * Return: Always 0.
  */
-void print_array(int *a, int n)
+
+char *_strcpy(char *dest, char *src)
 {
 	int x;
 
-	for (x = 0; x < n; x++)
+	for (x = 0; src[x] != '\0'; ++x)
 	{
-		if (x == n - 1)
-		{
-			printf("%d", a[x]);
-		}
-		else
-		{
-		printf("%d, ", a[x]);
-		}
+		dest[x] = src[x];
 	}
-	printf("\n");
+	dest[x] = src[x];
+
+	/*
+	 * can do "dest[x] = src[x]" here
+	 * to assign the null value because 'src[x]' is null after loop
+	 */
+	return (dest);
 }
