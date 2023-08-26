@@ -10,16 +10,16 @@
 char *leet(char *str)
 {
 	int x, z;
-	char s1[] = "aAeEoOtTlL";
-	char s2[] = "4433007711";
+	char at[] = "aAeEoOtTlL";
+	char num[5] = "4433007711";
 
 	for (x = 0; str[x] != '\0'; x++)
 	{
-		for (z = 0; s1[x] != '\0'; z++)
+		for (z = 0; at[z] != '\0'; z++)
 		{
-			if (str[x] == s1[z])
+			if (at[z] == str[x] || (at[z] - 32) == str[x])
 			{
-				str[x] = s1[z];
+				str[x] = num[z];
 			}
 		}
 	}
