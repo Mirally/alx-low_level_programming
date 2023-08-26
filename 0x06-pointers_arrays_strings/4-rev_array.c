@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * reverse_array - check the code for Holberton School students.
+ * reverse_array - reverse the content of an array of integers
  * @a: an array of integers
  * @n: the number of elements to swap
  *

@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * string_toupper - check the code for Holberton School students.
+ * string_toupper - change all lowercase letters of a string to uppercase
  * @str: string
  * Return: Always 0.
  */
