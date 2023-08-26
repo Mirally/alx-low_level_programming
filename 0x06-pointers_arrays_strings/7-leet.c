@@ -3,25 +3,25 @@
 
 /**
  * leet - a function that encodes a string
- * @str: string
- * Return: Always 0.
+ * @n: input var
+ * Return: n value.
  */
 
 char *leet(char *str)
 {
 	int x, z;
-	char az[5] = "aeotl";
-	char num[5] = "43071";
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	for (x = 0; str[x] != '\0'; x++)
+	for (x = 0; n[x] != '\0'; x++)
 	{
-		for (z = 0; az[z] != '\0'; z++)
+		for (z = 0; z < 10; z++)
 		{
-			if (az[z] == str[x] || (az[z] - 32) == str[x])
+			if (n[x] == s1[z])
 			{
-				str[x] = num[z];
+				n[x] = s1[z];
 			}
 		}
 	}
-	return (str);
+	return (n);
 }
