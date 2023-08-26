@@ -3,15 +3,15 @@
 
 /**
  * leet - a function that encodes a string
- * @str: input var
- * Return: n value.
+ * @str: null var
+ * Return:(0)
  */
 
 char *leet(char *str)
 {
 	int x, z;
-	char at[] = "aAeEoOtTlL";
-	char num[5] = "4433007711";
+	char at[5] = "aeotl";
+	char num[5] = "43071";
 
 	for (x = 0; str[x] != '\0'; x++)
 	{
