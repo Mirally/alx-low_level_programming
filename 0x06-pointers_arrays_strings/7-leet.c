@@ -2,25 +2,26 @@
 #include <stdio.h>
 
 /**
- * _strncat - Concatenate two given strings, src of size n
- * @dest: Hello
- * @src: World
- * @n: size of src
+ * leet - a function that encodes a string
+ * @str: string
  * Return: Always 0.
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *leet(char *str)
 {
 	int x, z;
+	char az[5] = "aeotl";
+	char num[5] = "43071";
 
-	for (x = 0; dest[x] != '\0'; x++)
+	for (x = 0; str[x] != '\0'; x++)
 	{
+		for (z = 0; az[z] != '\0'; z++)
+		{
+			if (az[z] == str[x] || (az[z] - 32) == str[x])
+			{
+				str[x] = num[z];
+			}
+		}
 	}
-
-	for (z = 0; z < n && src[z] != '\0'; z++)
-	{
-		dest[x + z] = src[z];
-	}
-	dest[x + z] = '\0';
-	return (dest);
+	return (str);
 }
