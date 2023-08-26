@@ -3,7 +3,7 @@
 
 /**
  * leet - a function that encodes a string
- * @n: input var
+ * @str: input var
  * Return: n value.
  */
 
@@ -13,15 +13,15 @@ char *leet(char *str)
 	char s1[] = "aAeEoOtTlL";
 	char s2[] = "4433007711";
 
-	for (x = 0; n[x] != '\0'; x++)
+	for (x = 0; str[x] != '\0'; x++)
 	{
 		for (z = 0; z < 10; z++)
 		{
-			if (n[x] == s1[z])
+			if (str[x] == s1[z])
 			{
-				n[x] = s1[z];
+				str[x] = s1[z];
 			}
 		}
 	}
-	return (n);
+	return (str);
 }
